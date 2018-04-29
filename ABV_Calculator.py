@@ -8,3 +8,7 @@ FG = input('Enter Final Gravity: ') # User inputs final gravity
 ABV = (float(OG)-float(FG))*131.25 # Inputs converted to floats, alcohol by volume is calculated
 ABV = round(ABV,2) # rounded to two decimal places
 print('Alcohol by volume: ' + str(ABV) +'%') # text-based output
+
+# Here is the same operation implemented as a function:
+def ABV(OG,FG):
+    return round((OG-FG)*131.25,2)
